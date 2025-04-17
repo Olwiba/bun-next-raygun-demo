@@ -1,7 +1,5 @@
-# Bun + Next.js + Raygun Demo
-
 <p align="center">
-  <img src="https://assets.vercel.com/image/upload/v1662130559/nextjs/Icon_light_background.png" height="100">
+  <img src="public/next.svg" height="120">
 </p>
 
 ## Overview
@@ -13,6 +11,7 @@ This demo application showcases how to implement Raygun error tracking in a Next
 The application demonstrates a modern approach to error tracking in Next.js applications:
 
 ```mermaid
+%%{init: {'theme': 'base', 'themeVariables': { 'primaryColor': '#0070f3', 'primaryTextColor': '#fff', 'primaryBorderColor': '#0070f3', 'lineColor': '#333', 'secondaryColor': '#f1f1f1', 'tertiaryColor': '#d1d1d1' }}}%%
 graph TD
     A[Client-Side App] -->|Error occurs| B[raygun-client.ts]
     B -->|Reports via Browser SDK| C[Raygun API]
@@ -20,8 +19,9 @@ graph TD
     D[Server-Side App] -->|Error occurs| E[raygun-server.ts]
     E -->|Reports via Custom API Call| C
 
-    F[.env/.env.local] -->|API Key| B
-    F -->|API Key| E
+    style A fill:#0070f3,stroke:#0070f3,color:#fff
+    style D fill:#0070f3,stroke:#0070f3,color:#fff
+    style C fill:#ff4c4c,stroke:#cc0000,color:#fff
 ```
 
 ## Key Features
