@@ -7,9 +7,9 @@
   </a>
   <h1>Bun + Next.js + Raygun Demo</h1>
 
-<a href="https://bun.sh"><img alt="Powered by Bun" src="https://img.shields.io/badge/Powered%20by-Bun-black?style=for-the-badge&logo=bun"></a>
 <a href="https://nextjs.org"><img alt="Built with Next.js" src="https://img.shields.io/badge/Built%20with-Next.js-black?style=for-the-badge&logo=next.js"></a>
 <a href="https://raygun.com"><img alt="Error tracking by Raygun" src="https://img.shields.io/badge/Error%20Tracking-Raygun-blue?style=for-the-badge"></a>
+<a href="https://bun.sh"><img alt="Powered by Bun" src="https://img.shields.io/badge/Powered%20by-Bun-black?style=for-the-badge&logo=bun"></a>
 
 </div>
 
