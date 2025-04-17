@@ -22,18 +22,18 @@ This demo application showcases how to implement Raygun error tracking in a Next
 The application demonstrates a modern approach to error tracking in Next.js applications:
 
 ```mermaid
-%%{init: {'theme': 'base', 'themeVariables': { 'primaryColor': '#0070f3', 'primaryTextColor': '#fff', 'primaryBorderColor': '#0070f3', 'lineColor': '#666', 'secondaryColor': '#f8f9fa', 'tertiaryColor': '#e9ecef' }}}%%
+%%{init: {'theme': 'base', 'themeVariables': { 'primaryColor': '#0070f3', 'primaryTextColor': '#fff', 'primaryBorderColor': '#0070f3', 'lineColor': '#666', 'secondaryColor': '#f8f9fa', 'tertiaryColor': '#e9ecef', 'edgeLabelBackground': '#ffffff' }}}%%
 graph TD
-    A[Client-Side App] -->|Error occurs| B[raygun-client.ts]
-    B -->|Reports via Browser SDK| C[Raygun API]
+    A[Client-Side App] -->|<span style='color:black;font-weight:bold'>Error occurs</span>| B[raygun-client.ts]
+    B -->|<span style='color:black;font-weight:bold'>Reports via Browser SDK</span>| C[Raygun API]
 
-    D[Server-Side App] -->|Error occurs| E[raygun-server.ts]
-    E -->|Reports via Custom API Call| C
+    D[Server-Side App] -->|<span style='color:black;font-weight:bold'>Error occurs</span>| E[raygun-server.ts]
+    E -->|<span style='color:black;font-weight:bold'>Reports via Custom API Call</span>| C
 
     style A fill:#0070f3,stroke:#0055b3,color:#fff,stroke-width:2px
     style D fill:#0070f3,stroke:#0055b3,color:#fff,stroke-width:2px
-    style B fill:#f8f9fa,stroke:#666,color:#333,stroke-width:1px
-    style E fill:#f8f9fa,stroke:#666,color:#333,stroke-width:1px
+    style B fill:#e9f5ff,stroke:#0070f3,color:#000,stroke-width:1px,font-weight:bold
+    style E fill:#e6f7e6,stroke:#28a745,color:#000,stroke-width:1px,font-weight:bold
     style C fill:#232f3e,stroke:#000,color:#fff,stroke-width:2px
 ```
 
@@ -47,11 +47,11 @@ graph TD
 ## Setup
 
 1. Clone this repository
-2. Create `.env.local` file with your Raygun API key:
+2. Create **.env.local** file with your Raygun API key:
    ```bash
    cp .env.example .env.local
    ```
-   Edit the `.env.local` file with your Raygun API key:
+   Edit the **.env.local** file with your Raygun API key:
    ```
    NEXT_PUBLIC_RAYGUN_API_KEY=your_api_key_here
    ```
