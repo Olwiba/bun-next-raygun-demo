@@ -1,6 +1,17 @@
-<p align="center">
-  <img src="public/next.svg" height="120">
-</p>
+<div align="center">
+  <a href="https://nextjs.org">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="https://assets.vercel.com/image/upload/v1662130559/nextjs/Icon_dark_background.png">
+      <img alt="Next.js logo" src="https://assets.vercel.com/image/upload/v1662130559/nextjs/Icon_light_background.png" height="128">
+    </picture>
+  </a>
+  <h1>Bun + Next.js + Raygun Demo</h1>
+
+<a href="https://bun.sh"><img alt="Powered by Bun" src="https://img.shields.io/badge/Powered%20by-Bun-black?style=for-the-badge&logo=bun"></a>
+<a href="https://nextjs.org"><img alt="Built with Next.js" src="https://img.shields.io/badge/Built%20with-Next.js-black?style=for-the-badge&logo=next.js"></a>
+<a href="https://raygun.com"><img alt="Error tracking by Raygun" src="https://img.shields.io/badge/Error%20Tracking-Raygun-blue?style=for-the-badge"></a>
+
+</div>
 
 ## Overview
 
@@ -11,7 +22,7 @@ This demo application showcases how to implement Raygun error tracking in a Next
 The application demonstrates a modern approach to error tracking in Next.js applications:
 
 ```mermaid
-%%{init: {'theme': 'base', 'themeVariables': { 'primaryColor': '#0070f3', 'primaryTextColor': '#fff', 'primaryBorderColor': '#0070f3', 'lineColor': '#333', 'secondaryColor': '#f1f1f1', 'tertiaryColor': '#d1d1d1' }}}%%
+%%{init: {'theme': 'base', 'themeVariables': { 'primaryColor': '#0070f3', 'primaryTextColor': '#fff', 'primaryBorderColor': '#0070f3', 'lineColor': '#666', 'secondaryColor': '#f8f9fa', 'tertiaryColor': '#e9ecef' }}}%%
 graph TD
     A[Client-Side App] -->|Error occurs| B[raygun-client.ts]
     B -->|Reports via Browser SDK| C[Raygun API]
@@ -19,9 +30,11 @@ graph TD
     D[Server-Side App] -->|Error occurs| E[raygun-server.ts]
     E -->|Reports via Custom API Call| C
 
-    style A fill:#0070f3,stroke:#0070f3,color:#fff
-    style D fill:#0070f3,stroke:#0070f3,color:#fff
-    style C fill:#ff4c4c,stroke:#cc0000,color:#fff
+    style A fill:#0070f3,stroke:#0055b3,color:#fff,stroke-width:2px
+    style D fill:#0070f3,stroke:#0055b3,color:#fff,stroke-width:2px
+    style B fill:#f8f9fa,stroke:#666,color:#333,stroke-width:1px
+    style E fill:#f8f9fa,stroke:#666,color:#333,stroke-width:1px
+    style C fill:#232f3e,stroke:#000,color:#fff,stroke-width:2px
 ```
 
 ## Key Features
